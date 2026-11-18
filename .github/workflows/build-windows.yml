@@ -36,10 +36,13 @@ jobs:
           --collect-all soundcard `
           Transcript.py
 
+    - name: Install Inno Setup
+      run: |
+        choco install innosetup -y
+
     - name: Compile Inno Setup Installer
-      uses: Minisug/inno-setup-action@v1
-      with:
-        path: installer.iss
+      run: |
+        & "C:\Program Files (x86)\Inno Setup 6\ISCC.exe" installer.iss
 
     - name: Upload Installer Artifact
       uses: actions/upload-artifact@v4
