@@ -18,7 +18,7 @@ ctk.set_default_color_theme("blue")
 class App:
     def __init__(self, root):
         self.root = root
-        self.root.title("MeetScript - Live Transcription")
+        self.root.title("MeetScript - Live Transcription - Built By Mohd Umar Ansari")
         self.root.geometry("980x720")
         self.root.minsize(820, 600)
         self.root.configure(fg_color="#0f172a")  # Tailwind Slate-900
@@ -71,7 +71,7 @@ class App:
 
         title_label = ctk.CTkLabel(
             title_row,
-            text="MeetScript - Live Transcription",
+            text="MeetScript - Live Transcription - Built By Mohd Umar Ansari",
             font=ctk.CTkFont(family="Segoe UI", size=18, weight="bold"),
             text_color="#f8fafc"  # Tailwind Slate-50
         )
